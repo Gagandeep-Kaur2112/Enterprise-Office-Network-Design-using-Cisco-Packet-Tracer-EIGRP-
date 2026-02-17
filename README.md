@@ -1,100 +1,106 @@
-Enterprise Office Network Design using Cisco Packet Tracer
-Project Overview
+# Enterprise Office Network Design using Cisco Packet Tracer
 
-This project demonstrates the design and implementation of a simulated enterprise office network using Cisco Packet Tracer. The network is built to represent multiple interconnected enterprise locations with automated configuration, dynamic routing, centralized services, and remote device management.
+## Project Overview
 
-The primary objective was to create a scalable network infrastructure where multiple routers, switches, and end devices communicate efficiently while supporting internal web services accessible through domain names.
+This project demonstrates the design and implementation of a simulated enterprise office network using Cisco Packet Tracer. The objective was to create a scalable and functional network environment integrating dynamic routing, automated IP addressing, centralized services, and remote device management.
 
-Network Architecture
+The network simulates multiple interconnected enterprise locations where routers communicate through WAN links while supporting individual LAN environments connected via switches and end devices.
+
+---
+
+## Network Architecture
 
 The enterprise network consists of:
 
-9 interconnected routers forming a chained WAN topology
+- 9 interconnected routers forming a chained WAN topology
+- 16 switches providing LAN connectivity
+- Multiple PCs and laptops configured as DHCP clients
+- One centralized server hosting DNS and HTTP services
 
-16 switches providing LAN connectivity
+Each router manages its own LAN subnet and participates in dynamic routing to ensure full connectivity across the network.
 
-Multiple PCs and laptops configured as DHCP clients
+---
 
-One centralized server providing DNS and HTTP services
+## Technologies and Protocols Used
 
-Each router supports its own LAN subnet and exchanges routing information using dynamic routing protocols to maintain full connectivity across the network.
+- EIGRP (Enhanced Interior Gateway Routing Protocol) for dynamic routing
+- DHCP (Dynamic Host Configuration Protocol) for automatic IP assignment
+- DNS (Domain Name System) for domain name resolution
+- HTTP for internal web hosting
+- Telnet (VTY lines) for remote router management
+- Subnetting and IP address planning
+- Cisco CLI configuration
 
-Technologies and Protocols Used
+---
 
-EIGRP for dynamic routing between routers
+## IP Addressing Scheme
 
-DHCP for automatic IP address assignment
+WAN Network Range (Router-to-Router Communication):
 
-DNS for domain name resolution
+- 192.168.1.0 – 192.168.8.0
 
-HTTP for internal web hosting
+LAN Network Range:
 
-Telnet (VTY lines) for remote router management
+- 172.16.1.0 – 172.16.16.0
 
-Subnetting and structured IP addressing
+Different subnet masks were used based on device requirements to optimize IP utilization.
 
-IP Addressing Scheme
+---
 
-WAN Links (Router-to-Router):
+## Key Features
 
-192.168.1.0 – 192.168.8.0
+- Dynamic route exchange using EIGRP
+- Automated IP assignment through multiple DHCP pools
+- DNS-based access to internal websites:
+  - www.aot.com
+  - www.jjk.com
+- Remote router configuration using Telnet
+- Successful end-to-end connectivity across all network segments
 
-LAN Networks:
+---
 
-172.16.1.0 – 172.16.16.0
+## Testing and Validation
 
-Subnet masks were adjusted based on the number of devices in each LAN to optimize address usage.
+The following tests were performed:
 
-Key Features
+- Ping tests for connectivity verification
+- DNS lookup validation
+- HTTP browser testing for hosted websites
+- Remote login via Telnet
 
-Dynamic routing using EIGRP
+All devices successfully communicated across networks through dynamic routing.
 
-Multiple DHCP pools configured per subnet
+---
 
-DNS-based website access:
+## Network Topology Diagram
 
-www.aot.com
+**Topology Overview:**
 
-www.jjk.com
+The diagram represents a simulated enterprise network consisting of nine routers connected in a chained WAN architecture. Each router connects to local LAN segments through switches and supports DHCP-based client devices. Dynamic routing using EIGRP ensures connectivity between all subnets, while a centralized server provides DNS and HTTP services accessible through domain names. Telnet remote access is enabled on all routers for administrative management.
 
-Remote access to routers via Telnet
+(Add your topology screenshot here)
 
-Successful end-to-end connectivity across all networks
+---
 
-Testing and Validation
+## Learning Outcomes
 
-The following validation steps were performed:
+- Enterprise network topology design
+- Dynamic routing protocol implementation
+- Automated IP management using DHCP
+- DNS and HTTP service integration
+- Remote network device administration
 
-Ping tests for connectivity verification
+---
 
-DNS lookup testing
+## Future Improvements
 
-HTTP web access through browser
+- Replace Telnet with SSH for secure remote access
+- Implement Access Control Lists (ACLs)
+- Add VLAN segmentation for improved network organization
+- Introduce hierarchical network design
 
-Remote login using Telnet
+---
 
-Learning Outcomes
-
-Enterprise network topology design
-
-Dynamic routing configuration
-
-Automated IP management
-
-Network service deployment
-
-Remote administration techniques
-
-Future Improvements
-
-Implement SSH instead of Telnet
-
-Add Access Control Lists (ACL)
-
-Introduce VLAN segmentation
-
-Improve hierarchical network design
-
-Author
+## Author
 
 Gagandeep Kaur
