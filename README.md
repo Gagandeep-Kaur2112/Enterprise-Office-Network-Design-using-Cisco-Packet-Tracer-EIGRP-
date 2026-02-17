@@ -46,6 +46,29 @@ LAN Network Range:
 Different subnet masks were used based on device requirements to optimize IP utilization.
 
 ---
+## Screenshots
+
+### Network Topology
+<img width="1507" height="633" alt="Netwok-Design" src="https://github.com/user-attachments/assets/31a1847c-1df3-4a97-a409-80ccadbad7c5" />
+
+### EIGRP Configuration
+<img width="1267" height="1011" alt="IP-Routes" src="https://github.com/user-attachments/assets/11533e49-7e4a-4ea5-9320-926aed319c46" />
+
+### DHCP Working
+<img width="948" height="1006" alt="Screenshot 2026-02-17 124130" src="https://github.com/user-attachments/assets/91535002-3b07-4cc1-bddb-efa04698b069" />
+
+
+### DNS Lookup
+<img width="805" height="1002" alt="DNS_Server" src="https://github.com/user-attachments/assets/364acee0-f8a9-4447-a380-1847799eb54e" />
+
+
+### HTTP Website Test
+<img width="1266" height="1000" alt="Lauching_Site_on PCbrowser" src="https://github.com/user-attachments/assets/59239990-cc79-42ae-9a0b-24a194231341" />
+
+
+### Telnet Remote Access
+<img width="1355" height="1018" alt="Telnet_remote-access" src="https://github.com/user-attachments/assets/5cde0b42-88cb-4bdd-bef0-3b1b9c870ec6" />
+
 
 ## Key Features
 
